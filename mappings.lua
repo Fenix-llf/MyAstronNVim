@@ -9,6 +9,16 @@ return {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+    -- Split windows 
+    ["s<right>"] = { "<cmd>vsplit<cr>", desc = "Horizontal Split" },
+    ["s<left>"] = { "<cmd>vsplit<cr>", desc = "Horizontal Split" },
+    ["s<up>"] = { "<cmd>split<cr>", desc = "Vertical Split" },
+    ["s<down>"] = { "<cmd>split<cr>", desc = "Vertical Split" },
+    -- Jump between windows
+    ["<leader><right>"] = { "<c-w>l", desc = "Go Right Window" },
+    ["<leader><left>"] = { "<c-w>h", desc = "Go Left Window" },
+    ["<leader><up>"] = { "<c-w>k", desc = "Go Up Window" },
+    ["<leader><down>"] = { "<c-w>j", desc = "Go Down Window" },
     ["<leader>bD"] = {
       function()
         require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
