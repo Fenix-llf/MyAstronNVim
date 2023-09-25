@@ -18,8 +18,8 @@ return {
 	  termencoding = 'utf-8',
 	  encoding = 'utf-8',
 	  whichwrap = 'h,l,b,s,<,>,[,]', -- 换行按键
-	  background = 'dark', --背景黑色
     termguicolors = true, --如果安装第三方主题，必须设置为true
+    relativenumber = false,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
